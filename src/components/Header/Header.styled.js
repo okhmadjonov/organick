@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
   height: 204px;
   display: flex;
   align-items: center;
-  border: 1px solid teal;
+
   background-color: white;
 `;
 
@@ -35,6 +35,7 @@ export const Logo = styled.div`
   display: flex;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
 `;
 
 export const Menu = styled.div`
@@ -106,6 +107,10 @@ export const SearchIcon = styled.div`
   color: white;
   font-size: 2em;
   background-color: #7eb693;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #274c5b;
+  }
 `;
 
 export const Cart = styled.div`
@@ -114,8 +119,9 @@ export const Cart = styled.div`
   border-radius: 36px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   border: 1px solid #e0e0e0;
+  padding: 0 8px;
   cursor: pointer;
 `;
 
@@ -129,6 +135,10 @@ export const CartIcon = styled.div`
   color: white;
   font-size: 2em;
   background-color: #274c5b;
+  &:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: #7eb693;
+  }
 `;
 
 export const CartText = styled.p`
